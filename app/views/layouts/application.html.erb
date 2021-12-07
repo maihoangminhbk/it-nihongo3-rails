@@ -10,9 +10,11 @@
   </head>
 
   <body>
+    <%= link_to "ホーム", root_path %>
     <%= link_to "サインイン", new_user_session_path %>
     <%= link_to "ユーザ登録", new_user_registration_path %>
     
     <%= yield %>
+    <%= link_to "本一覧をみる", books_path %>
   </body>
 </html>
